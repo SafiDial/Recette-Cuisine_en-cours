@@ -1,0 +1,309 @@
+  /*/////////////////////////////Le style de Header.jsx ////////////////////////*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #9afcff; /* Couleur de fond légère */
+  }
+  
+  header {
+    background-color: #20d5de;
+    padding: 10px 20px;
+    border-bottom: 1px solid #092ae2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ 
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease-in-out; /* Transition sur la couleur */
+  }
+  
+  nav a:hover {
+    color: #007bff; /* Couleur de survol */
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+
+  /*/////////////////////////////Le style de App.jsx (l'acceuil)////////////////////////*/
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrage vertical */
+    align-items: center; /* Centrage horizontal */
+    height: 100%; /* Utilisation de la hauteur disponible */
+    text-align: center; /* Alignement du texte au centre */
+    padding: 50px 20px; /* Espacement intérieur ajusté */
+    box-sizing: border-box; /* Pour inclure les paddings dans la taille totale */
+  }
+  
+  
+  .home-container h1 {
+    font-size: 36px;
+    color: #021b07;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .home-container p {
+    font-size: 18px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .home-links {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .home-links a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .home-links a:hover {
+    background-color: #0056b3; /* Couleur de survol plus foncée */
+  }
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+/*/////////////////////////////Le style de RecipeList.jsx ////////////////////////*/
+
+.recipe-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .recipe {
+    border: 1px solid #0d5371;
+    padding: 10px;
+    text-align: center;
+    background-color: #85e6ee;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  .recipe h3 {
+    margin-bottom: 10px;
+    color: #251010;
+  }
+  
+  .recipe p {
+    color: #666;
+  }
+  
+  .recipe-image {
+    width: auto;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  
+ 
+
+  /*/////////////////////////////Le style de LoginForm.jsx ////////////////////////*/
+  .login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-heading {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555555;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  .submit-button {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #004499;
+  }
+  
+
+
+  .add-recipe-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-recipe-form h2 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.add-recipe-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-recipe-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.add-recipe-form input[type="text"],
+.add-recipe-form textarea,
+.add-recipe-form input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  resize: vertical; /* Permet de redimensionner verticalement le textarea si nécessaire */
+}
+
+.add-recipe-form button {
+  background-color: #0056b3;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-recipe-form button:hover {
+  background-color: #004499;
+}
+
+
+
+
+
+
+
+/* Styles spécifiques au formulaire d'ajout de recette */
+
+.add-recipe-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-recipe-form h2 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .add-recipe-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-recipe-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .add-recipe-form input[type="text"],
+  .add-recipe-form textarea,
+  .add-recipe-form input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+  }
+  
+  .add-recipe-form textarea {
+    resize: vertical; /* Permet de redimensionner verticalement le textarea si nécessaire */
+  }
+  
+  .add-recipe-form button {
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-recipe-form button:hover {
+    background-color: #004499;
+  }
+  
